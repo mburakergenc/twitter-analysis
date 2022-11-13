@@ -30,7 +30,7 @@ def search_tweets(search_term):
     """
     api = tweepy.API(authenticate_twitter(), wait_on_rate_limit=True)
     tweets = tweepy.Cursor(api.search_tweets, tweet_mode="extended", q=search_term +
-                           " exclude:retweets ").items(100)
+                           " exclude:retweets ").items(500)
     tweets = [tweet._json for tweet in tweets]
 
     return tweets

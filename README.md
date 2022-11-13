@@ -12,6 +12,7 @@ Analysis of tweets for kahoot
   - `docker run -ti mburakergenc/kahootassignment`
 - Enter a search term when requested by the application such as "Donald"
 - Please try to select a high volume keyword to see all the details analysis. You'll get warnings printed when the keyword doesn't have any tweets within the last 1, 5, 60 minutes.
+- Results are limited to **500 tweets** for performance reasons. It should take a few seconds for 500 tweets to be loaded from Twitter.
 
 # How to run the tests
 
